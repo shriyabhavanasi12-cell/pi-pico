@@ -69,9 +69,7 @@ body{
 
 }
 
-body{
 
-}
 
 main{
 
@@ -189,4 +187,109 @@ a:visited{
     width:14rem;
     display:block;
     padding:0rem;
+}
+
+.wrap > p,
+.wrap> span{
+    width:14rem;
+    display:block;
+    padding: 0rem;
+}
+
+.bigfont{
+    font-size: 2rem;
+}
+.hugefont{
+     
+    font-size:6rem;
+    text-align:center;
+    padding: 1rem;
+}
+
+.wrap .narrow{
+
+    width:10rem;
+
+}
+.wrap .wide{
+    width: 20rem;
+}
+
+blockquote{
+    font: var(--quote-font);
+    color:var(--detail);
+    text-align:center;
+    padding: 0rem;
+    max-width:25rem;
+}
+cite{
+    color:var(--detail);
+    font-size:small;
+}
+
+.title{
+    height:9.4rem;
+}
+.rounded{
+    border-radius: 1rem;
+}
+
+.gradient1{
+    background-image:linear-gradient(
+to bottom right,
+var(--secondary),
+var(--detail)
+
+
+    );
+    color: var(--onsecondary);
+}
+.gradient2{
+
+    background-image: linear-gradient(
+        to top right,
+
+        var(--tertiary),
+        var(--detail2)
+    );
+    color:var(--ontertiary);
+}
+.wrap .card{
+
+    width:10rem;
+    height:15rem;
+    border: 0.1rem solid transparent;
+
+}
+
+.card-content{
+    position: relative;
+    width: 100%;
+    height:100%;
+    text-align:center;
+    transition:transform 1s;
+    transform-style:preserve-3d;
+    perspective: 60rem;
+}
+.card:hover .card-content{
+    transform: rotateY(180deg);
+
+}
+
+.card-face{
+position:absolute;
+width: 100%;
+height:100%
+backface-visibility: hidden;
+
+}
+
+.card p{
+
+    padding:0.5rem;
+    font:var(--body-font);
+}
+.card img{
+    max-width:80%;
+    max-height: 80%;
 }
